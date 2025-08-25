@@ -5,7 +5,7 @@
 *{benjamin.fele, jan.babic}@ijs.si*
 
 [[paper]](https://proceedings.mlr.press)
-[[teaser]](https://www.youtube.com)
+[[teaser]](https://youtu.be/TYQ31tm0wbc)
 [[demo]](https://youtu.be/tC4IWy4Nl6Y)
 
 ## Abstract
