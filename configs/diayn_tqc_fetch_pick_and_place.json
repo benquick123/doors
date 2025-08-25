@@ -7,7 +7,7 @@
     "env_name": "gymnasium_robotics:FetchPickAndPlaceDense-v4",
 
     "shaper_kwargs": {
-        "shaping_path": "./results/FetchPickAndPlaceDense-v4/DIAYNRewardWrapper/Random/2025-04-10_15-36-32_seed=0_n_epochs=5_total_timesteps=1000000_discriminator_update_freq=20001/reward_shaper.pkl",
+        "shaping_path": null,
         "reward_type": "entropy"
     },
 

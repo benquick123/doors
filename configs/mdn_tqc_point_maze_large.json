@@ -7,7 +7,7 @@
     "env_name": "gymnasium_robotics:PointMaze_LargeDense-v3",
 
     "shaper_kwargs": {
-        "shaping_path": "./results/PointMaze_LargeDense-v3/MDNRewardWrapper/Random/timesteps=1000000_n_epochs=100000_horizon=500/reward_shaper.pkl",
+        "shaping_path": null,
         "horizon": 500
     },
 

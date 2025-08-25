@@ -9,5 +9,9 @@
     "env_name": "gymnasium_robotics:FetchSlideDense-v4",
 
     "wrappers": ["env_utils.wrappers.CustomResetFnWrapper"],
-    "wrapper_kwargs": [{"env_initialization_fn": "env_utils.helpers.default.initialization_fn"}]
+    "wrapper_kwargs": [{"env_initialization_fn": "env_utils.helpers.default.initialization_fn"}],
+
+    "train_kwargs": {
+        "total_timesteps": 1000000
+    }
 }

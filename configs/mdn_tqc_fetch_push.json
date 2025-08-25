@@ -7,7 +7,7 @@
     "env_name": "gymnasium_robotics:FetchPushDense-v4",
 
     "shaper_kwargs": {
-        "shaping_path": "./results/FetchPushDense-v4/MDNRewardWrapper/Random/timesteps=1000000_n_epochs=100000_horizon=32/reward_shaper.pkl",
+        "shaping_path": null,
         "horizon": 32
     }
 }
