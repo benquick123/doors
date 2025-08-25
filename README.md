@@ -1,10 +1,12 @@
 # $Door(s)$: Junction State Estimation for Efficient Exploration in Reinforcement Learning
 
 *Benjamin Fele, Jan Babič* <br>
-*Jozef Stefan Institute, Jamova cesta 39, 1000 Ljubljana, Slovenia*
+*Jozef Stefan Institute, Jamova cesta 39, 1000 Ljubljana, Slovenia* <br>
+*{benjamin.fele, jan.babic}@ijs.si*
 
-[[overview]](https://www.youtube.com)
-[[demo]](https://www.youtube.com)
+[[paper]](https://proceedings.mlr.press)
+[[teaser]](https://youtu.be/TYQ31tm0wbc)
+[[demo]](https://youtu.be/tC4IWy4Nl6Y)
 
 ## Abstract
 
