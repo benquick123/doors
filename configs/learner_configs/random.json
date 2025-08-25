@@ -1,0 +1,8 @@
+{
+    "learner_class": "rl.random.Random",
+    "learner_kwargs": {},
+
+    "shaper_kwargs": {
+        "rollout_shaping_reward": false
+    }
+}

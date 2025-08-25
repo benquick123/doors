@@ -1,0 +1,40 @@
+{
+    "env_kwargs": {
+        "continuing_task": true,
+        "reset_target": false
+    },
+
+    "wrappers": ["env_utils.wrappers.CustomResetFnWrapper", "env_utils.wrappers.SparseRewardWrapper"],
+    "wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.default.initialization_fn"},
+        {"reward_threshold": 0.6376281516}
+    ],
+
+    "eval_wrappers": ["env_utils.wrappers.CustomResetFnWrapper", "env_utils.wrappers.SparseRewardWrapper"],
+    "eval_wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.default.initialization_fn"},
+        {"reward_threshold": 0.6376281516}
+    ],
+
+    "shaper_kwargs": {
+        "shaping_preprocess_obs_fn": "env_utils.helpers.point_maze.preprocess_obs_fn",
+        "inference_preprocess_obs_fn": "env_utils.helpers.point_maze.preprocess_obs_fn"
+    },
+
+    "learner_kwargs": {
+        "policy": "MultiInputPolicy",
+        "replay_buffer_class": "utils.replay_buffer.ChangingRewardHerReplayBuffer",
+        "replay_buffer_kwargs": {"n_sampled_goal": 0},
+        "policy_kwargs": {"net_arch": [512, 512, 512]},
+        "batch_size": 1024,
+        "learning_rate": 0.001
+    },
+
+    "train_kwargs": {
+        "total_timesteps": 500000
+    },
+
+    "eval_kwargs": {
+        "eval_freq": 2500
+    }
+}

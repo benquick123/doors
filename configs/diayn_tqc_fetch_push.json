@@ -1,0 +1,39 @@
+{
+    "shaping_config": "configs/shaping_configs/diayn.json",
+    "learner_config": "configs/learner_configs/tqc.json",
+    "env_config": "configs/environment_configs/fetch.json",
+    "experiment_config": "configs/experiment_configs/default.json",
+
+    "env_name": "gymnasium_robotics:FetchPushDense-v4",
+
+    "shaper_kwargs": {
+        "shaping_path": "./results/FetchPushDense-v4/DIAYNRewardWrapper/Random/2025-04-10_15-36-32_seed=0_n_epochs=5_total_timesteps=1000000_discriminator_update_freq=20001/reward_shaper.pkl",
+        "reward_type": "entropy"
+    },
+
+    "wrappers": [
+        "env_utils.wrappers.CustomResetFnWrapper", 
+        "env_utils.wrappers.SparseRewardWrapper", 
+        "env_utils.wrappers.DictObservationWrapper", 
+        "env_utils.wrappers.DummyZObservationWrapper"
+    ],
+    "wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.default.initialization_fn"}, 
+        {"reward_threshold": -0.05},
+        {},
+        {}
+    ],
+    
+    "eval_wrappers": [
+        "env_utils.wrappers.CustomResetFnWrapper", 
+        "env_utils.wrappers.SparseRewardWrapper", 
+        "env_utils.wrappers.DictObservationWrapper", 
+        "env_utils.wrappers.DummyZObservationWrapper"
+    ],
+    "eval_wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.default.initialization_fn"}, 
+        {"reward_threshold": -0.05},
+        {},
+        {}
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "shaping_config": "configs/shaping_configs/empowerment.json",
+    "learner_config": "configs/learner_configs/tqc.json",
+    "env_config": "configs/environment_configs/fetch.json",
+    "experiment_config": "configs/experiment_configs/default.json",
+
+    "env_name": "gymnasium_robotics:FetchPushDense-v4",
+
+    "shaper_kwargs": {
+        "shaping_path": "./results/FetchPushDense-v4/EmpowermentRewardWrapper/Random/timesteps=1000000_n_epochs=100000_horizon=8_action_encoder=False/reward_shaper.pkl",
+        "horizon": 8
+    }
+}

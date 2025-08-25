@@ -1,0 +1,32 @@
+{
+    "shaping_config": "configs/shaping_configs/diayn.json",
+    "learner_config": "configs/learner_configs/random.json",
+    "env_config": "configs/environment_configs/pendulum.json",
+    "experiment_config": "configs/experiment_configs/default.json",
+
+    "wrappers": [
+        "env_utils.wrappers.CustomResetFnWrapper", 
+        "env_utils.wrappers.SparseRewardWrapper", 
+        "env_utils.wrappers.DictObservationWrapper", 
+        "env_utils.wrappers.DummyZObservationWrapper"
+    ],
+    "wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.pendulum.full_initialization_fn"},
+        {"reward_threshold": 10}, 
+        {},
+        {}
+    ],
+    
+    "eval_wrappers": [
+        "env_utils.wrappers.CustomResetFnWrapper", 
+        "env_utils.wrappers.SparseRewardWrapper", 
+        "env_utils.wrappers.DictObservationWrapper", 
+        "env_utils.wrappers.DummyZObservationWrapper"
+    ],
+    "eval_wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.pendulum.downward_initialization_fn"},
+        {"reward_threshold": -0.01},
+        {},
+        {}
+    ]
+}

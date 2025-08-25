@@ -1,0 +1,33 @@
+{
+    "env_name": "Pendulum-v1",
+    "wrappers": ["env_utils.wrappers.CustomResetFnWrapper", "env_utils.wrappers.SparseRewardWrapper"],
+    "wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.pendulum.downward_initialization_fn"}, 
+        {"reward_threshold": -0.01}
+    ],
+
+    "eval_wrappers": ["env_utils.wrappers.CustomResetFnWrapper", "env_utils.wrappers.SparseRewardWrapper"],
+    "eval_wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.pendulum.downward_initialization_fn"}, 
+        {"reward_threshold": -0.01}
+    ],
+
+    "shaper_kwargs": {
+        "shaping_preprocess_obs_fn": "env_utils.helpers.default.preprocess_obs_fn",
+        "inference_preprocess_obs_fn": "env_utils.helpers.default.preprocess_obs_fn"
+    },
+
+    "learner_kwargs": {
+        "policy": "MlpPolicy",
+        "replay_buffer_class": "utils.replay_buffer.ChangingRewardReplayBuffer",
+        "learning_rate": 0.001
+    },
+
+    "train_kwargs": {
+        "total_timesteps": 50000
+    },
+
+    "eval_kwargs": {
+        "eval_freq": 1000
+    }
+}

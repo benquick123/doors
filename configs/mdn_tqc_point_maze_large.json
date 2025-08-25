@@ -1,0 +1,17 @@
+{
+    "shaping_config": "configs/shaping_configs/mdn.json",
+    "learner_config": "configs/learner_configs/tqc.json",
+    "env_config": "configs/environment_configs/point_maze.json",
+    "experiment_config": "configs/experiment_configs/default.json",
+
+    "env_name": "gymnasium_robotics:PointMaze_LargeDense-v3",
+
+    "shaper_kwargs": {
+        "shaping_path": "./results/PointMaze_LargeDense-v3/MDNRewardWrapper/Random/timesteps=1000000_n_epochs=100000_horizon=500/reward_shaper.pkl",
+        "horizon": 500
+    },
+
+    "train_kwargs": {
+        "total_timesteps": 1000000
+    }
+}

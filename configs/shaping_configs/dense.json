@@ -1,0 +1,9 @@
+{
+    "shaper_class": "env_utils.wrappers.MDNRewardWrapper",
+    "shaper_kwargs": {
+        "shaping_reward_weight": 0.0,
+        "shaping_warmup_eps": "inf",
+        "rollout_shaping_reward": false,
+        "verbose": 0
+    }
+}

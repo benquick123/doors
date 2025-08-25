@@ -1,0 +1,23 @@
+{
+    "shaping_config": "configs/shaping_configs/empowerment.json",
+    "learner_config": "configs/learner_configs/random.json",
+    "env_config": "configs/environment_configs/fetch.json",
+    "experiment_config": "configs/experiment_configs/default.json",
+
+    "env_name": "gymnasium_robotics:FetchPushDense-v4",
+
+    "shaper_kwargs": {
+        "horizon": 32
+    },
+
+    "wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.fetch.full_initialization_fn"}, 
+        {"reward_threshold": -0.05}
+    ],
+
+    "eval_kwargs": {"eval_freq": 99999999999999},
+    "eval_wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.fetch.full_initialization_fn"}, 
+        {"reward_threshold": -0.05}
+    ]
+}

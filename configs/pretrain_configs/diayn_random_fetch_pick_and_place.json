@@ -1,0 +1,35 @@
+{
+    "shaping_config": "configs/shaping_configs/diayn.json",
+    "learner_config": "configs/learner_configs/random.json",
+    "env_config": "configs/environment_configs/fetch.json",
+    "experiment_config": "configs/experiment_configs/default.json",
+
+    "env_name": "gymnasium_robotics:FetchPickAndPlaceDense-v4",
+
+    "wrappers": [
+        "env_utils.wrappers.CustomResetFnWrapper", 
+        "env_utils.wrappers.SparseRewardWrapper", 
+        "env_utils.wrappers.DictObservationWrapper", 
+        "env_utils.wrappers.DummyZObservationWrapper"
+    ],
+    "wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.fetch.full_initialization_fn"}, 
+        {"reward_threshold": -0.05},
+        {},
+        {}
+    ],
+    
+    "eval_kwargs": {"eval_freq": 99999999999999},
+    "eval_wrappers": [
+        "env_utils.wrappers.CustomResetFnWrapper", 
+        "env_utils.wrappers.SparseRewardWrapper", 
+        "env_utils.wrappers.DictObservationWrapper", 
+        "env_utils.wrappers.DummyZObservationWrapper"
+    ],
+    "eval_wrapper_kwargs": [
+        {"env_initialization_fn": "env_utils.helpers.fetch.full_initialization_fn"}, 
+        {"reward_threshold": -0.05},
+        {},
+        {}
+    ]
+}

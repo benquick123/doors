@@ -1,0 +1,17 @@
+{
+    "log": true,
+    "log_path": "results/",
+
+    "eval_kwargs": {
+        "n_eval_episodes": 10
+    },
+
+    "train_kwargs": {
+        "progress_bar": true,
+        "log_interval": 20
+    },
+
+    "logging_kwargs": {
+        "reward_shaper_logging": false
+    }
+}

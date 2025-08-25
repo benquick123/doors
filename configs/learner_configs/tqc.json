@@ -1,0 +1,15 @@
+{
+    "learner_class": "sb3_contrib.tqc.TQC",
+    "learner_kwargs": {
+        "policy_kwargs": {
+            "n_critics": 2,
+            "n_quantiles": 25
+        },
+        "top_quantiles_to_drop_per_net": 2,
+
+        "train_freq": [1, "episode"],
+        "gradient_steps": -1,
+        "verbose": 0,
+        "learning_starts": 5000
+    }
+}

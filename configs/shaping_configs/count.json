@@ -1,0 +1,7 @@
+{
+    "shaper_class": "env_utils.wrappers.CountBasedRewardWrapper",
+    "shaper_kwargs": {
+        "shaping_path": null,
+        "verbose": 0
+    }
+}

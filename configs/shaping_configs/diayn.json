@@ -1,0 +1,17 @@
+{
+    "shaper_class": "env_utils.wrappers.DIAYNRewardWrapper",
+    "shaper_kwargs": {        
+        "shaping_path": null,
+        "discriminator_kwargs": {
+            "hidden_dim": 512,
+            "n_layers": 3
+        },
+        "verbose": 0
+    },
+
+    "learner_kwargs": {
+        "policy": "MultiInputPolicy",
+        "replay_buffer_class": "utils.replay_buffer.ChangingRewardHerReplayBuffer",
+        "replay_buffer_kwargs": {"n_sampled_goal": 0}
+    }
+}

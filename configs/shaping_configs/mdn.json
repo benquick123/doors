@@ -1,0 +1,18 @@
+{
+    "shaper_class": "env_utils.wrappers.MDNRewardWrapper",
+    "shaper_kwargs": {
+        "shaping_path": null,
+        "mdn_update_freq": 20,
+        "mdn_kwargs": {
+            "pi_layers": 3,
+            "normal_layers": 3,
+            "hidden_dim": 512,
+            "n_components": 3
+        },
+        "shaping_n_epochs": 50,
+
+        "double_precision": false,
+        "query_horizon": 20,
+        "verbose": 0
+    }
+}
