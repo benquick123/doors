@@ -3,7 +3,8 @@
 *Benjamin Fele, Jan Babič* <br>
 *Jozef Stefan Institute, Jamova cesta 39, 1000 Ljubljana, Slovenia*
 
-[[overview]](https://www.youtube.com)
+[[paper]](https://proceedings.mlr.press)
+[[teaser]](https://www.youtube.com)
 [[demo]](https://www.youtube.com)
 
 ## Abstract
