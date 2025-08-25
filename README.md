@@ -6,7 +6,7 @@
 
 [[paper]](https://proceedings.mlr.press)
 [[teaser]](https://www.youtube.com)
-[[demo]](https://www.youtube.com)
+[[demo]](https://youtu.be/tC4IWy4Nl6Y)
 
 ## Abstract
 
