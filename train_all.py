@@ -70,37 +70,37 @@ if __name__ == "__main__":
         # "python train.py --config_path configs/count_tqc_fetch_pick_and_place.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --train_kwargs.total_timesteps 1000000",
         # "python train.py --config_path configs/diayn_tqc_fetch_pick_and_place.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --train_kwargs.total_timesteps 1000000",
         
-        # "python train.py --config_path configs/mdn_tqc_fetch_push.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.horizon 32 --shaper_kwargs.reuse_rollout_shaping True",
-        # "python train.py --config_path configs/empowerment_tqc_fetch_push_h=32.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.gce_kwargs.action_encoder False --shaper_kwargs.reuse_rollout_shaping True",
+        # "python train.py --config_path configs/mdn_tqc_fetch_push.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.horizon 32 --train_kwargs.total_timesteps 1000000 --shaper_kwargs.reuse_rollout_shaping True",
+        # "python train.py --config_path configs/empowerment_tqc_fetch_push_h=32.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.gce_kwargs.action_encoder False --train_kwargs.total_timesteps 1000000 --shaper_kwargs.reuse_rollout_shaping True",
         # "python train.py --config_path configs/empowerment_tqc_fetch_push_h=8.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.gce_kwargs.action_encoder False --train_kwargs.total_timesteps 1000000 --shaper_kwargs.reuse_rollout_shaping True",
-        # "python train.py --config_path configs/count_tqc_fetch_push.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0",
+        # "python train.py --config_path configs/count_tqc_fetch_push.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --train_kwargs.total_timesteps 1000000",
         # "python train.py --config_path configs/diayn_tqc_fetch_push.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --train_kwargs.total_timesteps 1000000",
         
-        # "python train.py --config_path configs/mdn_tqc_fetch_slide.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.horizon 32 --shaper_kwargs.reuse_rollout_shaping True",
-        # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=32.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.gce_kwargs.action_encoder False --shaper_kwargs.reuse_rollout_shaping True",
+        # "python train.py --config_path configs/mdn_tqc_fetch_slide.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.horizon 32 --train_kwargs.total_timesteps 1000000 --shaper_kwargs.reuse_rollout_shaping True",
+        # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=32.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.gce_kwargs.action_encoder False --train_kwargs.total_timesteps 1000000 --shaper_kwargs.reuse_rollout_shaping True",
         # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=8.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --shaper_kwargs.gce_kwargs.action_encoder False --train_kwargs.total_timesteps 1000000 --shaper_kwargs.reuse_rollout_shaping True",
-        # "python train.py --config_path configs/count_tqc_fetch_slide.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0",
+        # "python train.py --config_path configs/count_tqc_fetch_slide.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --train_kwargs.total_timesteps 1000000",
         # "python train.py --config_path configs/diayn_tqc_fetch_slide.json --shaper_kwargs.shaping_reward_weight 1.0 --wrapper_kwargs.1.reward_threshold 10.0 --train_kwargs.total_timesteps 1000000",
         
         ########################################## STAGE 3 ##########################################
         ### Pendulum-v1 ###
         ##  Naive baselines:
-        # "python train.py --config_path configs/dense_tqc_pendulum.json",                                                                                                              # dense baseline
-        # "python train.py --config_path configs/mdn_tqc_pendulum.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",                                                         # sparse baseline
+        # "python train.py --config_path configs/dense_tqc_pendulum.json",                                                                      # dense baseline
+        # "python train.py --config_path configs/mdn_tqc_pendulum.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",                 # sparse baseline
         
         ### PointMaze_LargeDense-v3 ###
         ##  Naive baselines:
-        # "python train.py --config_path configs/dense_tqc_point_maze_large.json",                                                                                                      # dense baseline
-        # "python train.py --config_path configs/mdn_tqc_point_maze_large.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",                                                 # sparse baseline
+        # "python train.py --config_path configs/dense_tqc_point_maze_large.json",                                                              # dense baseline
+        # "python train.py --config_path configs/mdn_tqc_point_maze_large.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",         # sparse baseline
         
         ### Fetch{PickAndPlace|Push|Slide}Dense-v4 ###
         ## Naive baselines:
-        # "python train.py --config_path configs/dense_tqc_fetch_pick_and_place.json",                                                                                                  # dense baseline
-        # "python train.py --config_path configs/mdn_tqc_fetch_pick_and_place.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",                                             # sparse baseline
-        # "python train.py --config_path configs/dense_tqc_fetch_push.json",                                                                                                            # dense baseline
-        # "python train.py --config_path configs/mdn_tqc_fetch_push.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",                                                       # sparse baseline
-        # "python train.py --config_path configs/dense_tqc_fetch_slide.json --train_kwargs.total_timesteps 1000000",                                                                    # dense baseline
-        # "python train.py --config_path configs/mdn_tqc_fetch_slide.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0 --train_kwargs.total_timesteps 1000000",               # sparse baseline
+        # "python train.py --config_path configs/dense_tqc_fetch_pick_and_place.json",                                                           # dense baseline
+        # "python train.py --config_path configs/mdn_tqc_fetch_pick_and_place.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",      # sparse baseline
+        # "python train.py --config_path configs/dense_tqc_fetch_push.json",                                                                     # dense baseline
+        # "python train.py --config_path configs/mdn_tqc_fetch_push.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",                # sparse baseline
+        # "python train.py --config_path configs/dense_tqc_fetch_slide.json",                                                                    # dense baseline
+        # "python train.py --config_path configs/mdn_tqc_fetch_slide.json --log sparse --shaper_kwargs.shaping_reward_weight 0.0",               # sparse baseline
         
         ################################## Train with heuristics: ###################################
         ### uncomment continue_what below
@@ -109,25 +109,25 @@ if __name__ == "__main__":
         ##  Door(s)
         # "python train.py --config_path configs/mdn_tqc_fetch_pick_and_place.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.mdn_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
         # "python train.py --config_path configs/mdn_tqc_fetch_push.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.mdn_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
-        # "python train.py --config_path configs/mdn_tqc_fetch_slide.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.mdn_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100 --train_kwargs.total_timesteps 1000000",
+        # "python train.py --config_path configs/mdn_tqc_fetch_slide.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.mdn_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
         
         ##  Empowerment:
         # "python train.py --config_path configs/empowerment_tqc_fetch_pick_and_place_h=32.json --log horizon=32/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100",
         # "python train.py --config_path configs/empowerment_tqc_fetch_push_h=32.json --log horizon=32/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100",
-        # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=32.json --log horizon=32/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100 --train_kwargs.total_timesteps 1000000",
+        # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=32.json --log horizon=32/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100",
         # "python train.py --config_path configs/empowerment_tqc_fetch_pick_and_place_h=8.json --log horizon=8/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100",
         # "python train.py --config_path configs/empowerment_tqc_fetch_push_h=8.json --log horizon=8/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100",
-        # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=8.json --log horizon=8/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100 --train_kwargs.total_timesteps 1000000",
+        # "python train.py --config_path configs/empowerment_tqc_fetch_slide_h=8.json --log horizon=8/ --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.gce_update_freq inf --shaper_kwargs.rollout_shaping_reward False --shaper_kwargs.gce_kwargs.action_encoder False --behavioral_cloning 100",
         
         ##  Count-based:
         # "python train.py --config_path configs/count_tqc_fetch_pick_and_place.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.count_model_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
         # "python train.py --config_path configs/count_tqc_fetch_push.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.count_model_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
-        # "python train.py --config_path configs/count_tqc_fetch_slide.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.count_model_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100 --train_kwargs.total_timesteps 1000000",
+        # "python train.py --config_path configs/count_tqc_fetch_slide.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.count_model_update_freq inf --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
         
         ##  DIAYN:
         # "python train.py --config_path configs/diayn_tqc_fetch_pick_and_place.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
         # "python train.py --config_path configs/diayn_tqc_fetch_push.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
-        # "python train.py --config_path configs/diayn_tqc_fetch_slide.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100 --train_kwargs.total_timesteps 1000000",
+        # "python train.py --config_path configs/diayn_tqc_fetch_slide.json --continue_from {path_to_pretrain_results} --learner_kwargs.learning_starts 1 --shaper_kwargs.shaping_reward_weight 0.0 --shaper_kwargs.rollout_shaping_reward False --behavioral_cloning 100",
     ]
 
     n_seeds = 10
