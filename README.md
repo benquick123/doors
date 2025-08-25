@@ -25,6 +25,8 @@ python train.py --config_path {path_to_config} {--additional_argument0 value0 ..
 
 Every command references a *configuration file* encoding general experimental hyperparameters. Please, inspect the files before running the code with your own problems. The configuation loading system takes care of additional referenced `.json` files in the configuration. Duplicate keys are overwritten following the order they are loaded at experiment initialization (duplicates are reported). Any additional arguments in the command itself are then treated as configuration parameters. For example, `--wrapper_kwargs.1.reward_threshold 10` will replace the `reward_threshold` initialization argument of the 1st environment wrapper.
 
+Before conducting the pretraining (STAGE 2), the path for the trained heuristic module has to be manually added under `shaper_kwargs.shaping_path` either in the appropriate `.json` configuration file or as a command-line argument.
+
 ### Additional code
 
 Non-essential (and non-cleaned up) code pertaining convergence detection and preliminary grid-world experiments is available upon request.
