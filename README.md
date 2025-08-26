@@ -4,7 +4,7 @@
 *Jozef Stefan Institute, Jamova cesta 39, 1000 Ljubljana, Slovenia* <br>
 *{benjamin.fele, jan.babic}@ijs.si*
 
-[[paper]](https://proceedings.mlr.press)
+[[paper]](https://nbr.ijs.si/362_door_s_junction_state_esti)
 [[teaser]](https://youtu.be/TYQ31tm0wbc)
 [[demo]](https://youtu.be/tC4IWy4Nl6Y)
 
